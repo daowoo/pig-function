@@ -8,9 +8,9 @@ ls
 --ls pig_data
 --cat pig_data/math.py
 
-math = load'pig_data/math.txt'as(number:int)
+math = load '/pig_data/math.txt' as (number:int)
 --dump math
-describe math 
 
-REGISTER 'pig_data/math.py' USING jython AS mathfuncs;
-whatmath = foreach math generate mathfuncs.square(number) as squareSchema
+REGISTER 'math.py' USING jython AS mathfuncs;
+whatmath = foreach math generate mathfuncs.square(number);
+dump whatmath;
