@@ -1,4 +1,3 @@
-/*
 data = load '/user/hdfs/peng/11.txt' as (
      record:chararray
 );
@@ -28,7 +27,6 @@ store data_a into '/user/hdfs/peng/21_a';
 
 rmf /user/hdfs/peng/21_b
 store data_b into '/user/hdfs/peng/21_b';
-*/
 
 a11 = load '/user/hdfs/peng/11_a' as (
          labela:chararray,
