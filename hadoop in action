@@ -1,2 +1,0 @@
--- 将路径指定文件的内容输出到stdout
-hadoop fs -cat hdfs://nn.daowoo.com:8020/pig_data/killers.txt
