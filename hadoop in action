@@ -1,0 +1,1 @@
+hadoop fs -cat hdfs://nn.daowoo.com:8020/pig_data/killers.txt
